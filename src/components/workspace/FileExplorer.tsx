@@ -18,26 +18,29 @@ import {
 } from "react-icons/vsc";
 
 const workspaceFiles = [
-  "run_chase.engine.ts",
-  "cover_drive.animation.tsx",
-  "king.mode.ts",
-  "mcg82.patch.ts",
-  "pak183.record.ts",
-  "adelaide141.history.ts",
-  "wc2023.masterclass.tsx",
-  "t20wc2024.final.tsx",
-  "century50.milestone.ts",
-  "orangecap2024.data.ts",
-  "virat.kohli.ts",
-  "legacy.builder.ts",
+  "hero.section.tsx",
+  "about.me.tsx",
+  "journey.timeline.tsx",
+  "skills.stack.tsx",
+  "projects.showcase.tsx",
+  "experience.timeline.tsx",
+  "achievements.tsx",
+  "contact.form.tsx",
+  "naxity.ai.tsx",
+  "smile12.app.tsx",
+  "despire.blog.tsx",
+  "iitiancrafts.internship.ts",
+  "portfolio.config.ts",
+  "resume.pdf",
 ];
 
 export default function FileExplorer() {
   return (
     <aside className="flex h-full flex-col bg-[#252526]">
+
       {/* Header */}
 
-      <div className="flex h-9 items-center justify-between border-b border-[#313131] px-3">
+      <div className="sticky top-0 z-20 flex h-9 items-center justify-between border-b border-[#313131] bg-[#252526] px-3">
         <span className="text-[11px] font-semibold tracking-[2px] text-zinc-400">
           EXPLORER
         </span>
@@ -50,45 +53,44 @@ export default function FileExplorer() {
         </div>
       </div>
 
-      {/* Explorer */}
-
       <div className="flex-1 overflow-y-auto py-2 text-[13px]">
+
         {/* Workspace */}
 
         <div className="mb-2 flex items-center gap-2 px-3 font-semibold text-white">
           <ChevronDown size={13} />
           <VscFolderOpened className="text-blue-400" />
-          <span>PORTFOLIO</span>
+          <span>Neelabh's-Portfolio</span>
         </div>
 
         {/* src */}
 
         <div className="px-1">
-          <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-300 hover:bg-[#2d2d30]">
-            <ChevronDown size={13} />
 
+          <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-300 transition hover:bg-[#2d2d30]">
+            <ChevronDown size={13} />
             <FolderOpen
               size={14}
               className="text-yellow-400"
             />
-
-            <span>Cricket</span>
+            <span>src</span>
           </div>
 
           <div className="ml-4 mt-1 space-y-0.5">
+
             {/* app */}
 
-            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
               <Folder
                 size={14}
                 className="text-blue-400"
               />
-              GOAT
+              app
             </div>
 
             {/* components */}
 
-            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
               <ChevronDown size={12} />
 
               <FolderOpen
@@ -96,12 +98,13 @@ export default function FileExplorer() {
                 className="text-yellow-400"
               />
 
-              Virat Kohli
+              components
             </div>
 
-            {/* workspace */}
+            {/* sections */}
 
             <div className="ml-4">
+
               <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-300">
                 <ChevronDown size={12} />
 
@@ -110,19 +113,26 @@ export default function FileExplorer() {
                   className="text-yellow-400"
                 />
 
-                workspace
+                sections
               </div>
 
               <div className="ml-4 mt-0.5 space-y-0.5">
+
                 {workspaceFiles.map((file) => (
+
                   <div
                     key={file}
-                    className={`flex items-center gap-2 rounded px-2 py-[3px] transition ${
-                      file === "virat.kohli.ts"
+                    className={`relative flex items-center gap-2 rounded px-2 py-[3px] transition-all duration-200 ${
+                      file === "hero.section.tsx"
                         ? "bg-[#37373d] text-white"
-                        : "text-zinc-400 hover:bg-[#2d2d30] hover:text-white"
+                        : "text-zinc-400 hover:bg-[#2d2d30] hover:text-cyan-300"
                     }`}
                   >
+
+                    {file === "hero.section.tsx" && (
+                      <div className="absolute left-0 top-0 h-full w-[3px] rounded-r bg-cyan-400" />
+                    )}
+
                     <VscFileCode
                       size={15}
                       className="shrink-0 text-sky-400"
@@ -132,19 +142,23 @@ export default function FileExplorer() {
                       {file}
                     </span>
 
-                    {file === "virat.kohli.ts" && (
-                      <span className="ml-auto text-[11px] text-green-400">
+                    {file === "hero.section.tsx" && (
+                      <span className="ml-auto text-[11px] text-cyan-400">
                         ●
                       </span>
                     )}
+
                   </div>
+
                 ))}
+
               </div>
+
             </div>
 
-            {/* data */}
+                        {/* data */}
 
-            <div className="mt-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+            <div className="mt-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
               <ChevronRight size={12} />
 
               <Folder
@@ -157,7 +171,7 @@ export default function FileExplorer() {
 
             {/* lib */}
 
-            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
               <ChevronRight size={12} />
 
               <Folder
@@ -170,7 +184,7 @@ export default function FileExplorer() {
 
             {/* hooks */}
 
-            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
               <ChevronRight size={12} />
 
               <Folder
@@ -180,13 +194,42 @@ export default function FileExplorer() {
 
               hooks
             </div>
+
+            {/* utils */}
+
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
+              <ChevronRight size={12} />
+
+              <Folder
+                size={14}
+                className="text-yellow-400"
+              />
+
+              utils
+            </div>
+
+            {/* assets */}
+
+            <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 transition hover:bg-[#2d2d30] hover:text-white">
+              <ChevronRight size={12} />
+
+              <Folder
+                size={14}
+                className="text-yellow-400"
+              />
+
+              assets
+            </div>
+
           </div>
         </div>
 
         {/* public */}
 
         <div className="mt-3 px-1">
-          <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-300 hover:bg-[#2d2d30]">
+
+          <div className="flex items-center gap-2 rounded px-2 py-[3px] text-zinc-300 transition hover:bg-[#2d2d30]">
+
             <ChevronRight size={13} />
 
             <Folder
@@ -195,33 +238,61 @@ export default function FileExplorer() {
             />
 
             public
-          </div>
-        </div>
 
-        {/* Root Files */}
+          </div>
+
+        </div>        {/* ================= Root Files ================= */}
 
         <div className="mt-4 border-t border-[#313131] pt-3">
-          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+
+          <div className="mb-2 px-3 text-[11px] font-semibold tracking-[2px] text-zinc-500">
+            ROOT
+          </div>
+
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
             <VscJson className="text-cyan-400" />
             globals.css
           </div>
 
-          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
             <VscJson className="text-yellow-400" />
             package.json
           </div>
 
-          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
             <VscJson className="text-emerald-400" />
             next.config.ts
           </div>
 
-          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] text-zinc-400 hover:bg-[#2d2d30] hover:text-white">
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
             <VscJson className="text-orange-400" />
             tailwind.config.ts
           </div>
+
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
+            <VscJson className="text-violet-400" />
+            tsconfig.json
+          </div>
+
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
+            <VscJson className="text-green-400" />
+            .env.local
+          </div>
+
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
+            <VscJson className="text-red-400" />
+            README.md
+          </div>
+
+          <div className="mx-1 flex items-center gap-2 rounded px-2 py-[3px] transition hover:bg-[#2d2d30] hover:text-white">
+            <VscJson className="text-sky-400" />
+            vercel.json
+          </div>
+
         </div>
+
       </div>
+
     </aside>
   );
 }

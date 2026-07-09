@@ -80,10 +80,20 @@ export default function LiveTyping() {
   }, [displayedLines]);
 
   return (
-    <div
-      ref={editorRef}
-      className="h-full overflow-y-auto pr-6"
-    >
+  <div
+  ref={editorRef}
+  className="
+    h-full
+    overflow-auto
+
+    pr-2
+    sm:pr-4
+    lg:pr-6
+
+    scrollbar-thin
+    scrollbar-thumb-zinc-700
+  "
+>
       {displayedLines.map((line, index) => (
         <CodeLine
           key={index}
@@ -108,7 +118,19 @@ function CodeLine({
     ) || [];
 
   return (
-    <div className="whitespace-pre text-[15px] leading-8">
+    <div
+  className="
+    whitespace-pre
+
+    text-[12px]
+    leading-6
+
+    sm:text-[13px]
+
+    lg:text-[15px]
+    lg:leading-8
+  "
+>
       {tokens.map((token, index) => (
         <Token key={index} token={token} />
       ))}

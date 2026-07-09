@@ -8,9 +8,9 @@ import MonitorStand from "./MonitorStand";
 
 export default function MacWindow() {
   return (
-    <div className="relative flex flex-col items-center">
-
+    <div className="relative flex w-full flex-col items-center">
       {/* Ambient Glow */}
+
       <div
         className="
           absolute
@@ -28,8 +28,9 @@ export default function MacWindow() {
       <div
         className="
           relative
-          w-[900px]
           h-[610px]
+          w-[900px]
+          shrink-0
         "
       >
         {/* Outer Frame */}
@@ -76,11 +77,7 @@ export default function MacWindow() {
               bg-black
             "
           >
-            {/* Wallpaper */}
-
             <Wallpaper />
-
-            {/* Reflection */}
 
             <div
               className="
@@ -94,17 +91,11 @@ export default function MacWindow() {
               "
             />
 
-            {/* macOS Controls */}
-
             <div className="absolute left-5 top-3 z-50">
               <TrafficLights />
             </div>
 
-            {/* Menu */}
-
             <MenuBar />
-
-            {/* VS Code */}
 
             <VSCodeEditor />
           </div>
@@ -144,7 +135,6 @@ export default function MacWindow() {
       <div className="-mt-1">
         <MonitorStand />
       </div>
-
     </div>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import TrafficLights from "./TrafficLights";
 
 import {
@@ -12,6 +14,37 @@ import {
 } from "lucide-react";
 
 export default function MenuBar() {
+  const [time, setTime] = useState("");
+  const [date, setDate] = useState("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+
+      setTime(
+        now.toLocaleTimeString("en-IN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
+
+      setDate(
+        now.toLocaleDateString("en-IN", {
+          weekday: "short",
+          day: "2-digit",
+          month: "short",
+        })
+      );
+    };
+
+    updateTime();
+
+    const interval = setInterval(updateTime, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       className="
@@ -36,7 +69,6 @@ export default function MenuBar() {
       {/* ================= Left ================= */}
 
       <div className="flex items-center gap-3">
-
         <TrafficLights />
 
         <Apple
@@ -44,8 +76,7 @@ export default function MenuBar() {
           className="opacity-90"
         />
 
-        <div className="flex items-center gap-4">
-
+        <div className="hidden items-center gap-4 md:flex">
           <span className="font-semibold">
             Finder
           </span>
@@ -61,15 +92,12 @@ export default function MenuBar() {
           <span>Window</span>
 
           <span>Help</span>
-
         </div>
-
       </div>
 
       {/* ================= Right ================= */}
 
-      <div className="flex items-center gap-4">
-
+      <div className="flex items-center gap-3">
         <Command
           size={14}
           className="opacity-80"
@@ -95,14 +123,13 @@ export default function MenuBar() {
           className="opacity-80"
         />
 
-        <span className="font-medium">
-          Wed 30 Jun
+        <span className="hidden md:block font-medium">
+          {date}
         </span>
 
         <span className="font-semibold">
-          8:30 PM
+          {time}
         </span>
-
       </div>
     </div>
   );

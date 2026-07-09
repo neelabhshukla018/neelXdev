@@ -13,22 +13,27 @@ export default function HeroRight() {
       "
     >
       {/* Ambient Glow */}
+
       <div className="absolute right-0 top-10 h-96 w-96 rounded-full bg-cyan-500/10 blur-[160px]" />
 
       <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-violet-500/10 blur-[160px]" />
 
-      {/* Workspace */}
+      {/* Desktop Only */}
 
       <div
         className="
-          relative
-          flex
+          hidden
+          lg:flex
+
           h-full
           w-full
+
           items-center
           justify-center
-          scale-[0.82]
+
           origin-center
+
+          scale-[0.82]
           xl:scale-[0.88]
           2xl:scale-100
         "

@@ -7,7 +7,7 @@ export default function Hero() {
       id="home"
       className="
         relative
-        h-screen
+        min-h-screen
         overflow-hidden
         bg-background
       "
@@ -41,25 +41,61 @@ export default function Hero() {
           z-10
           mx-auto
           flex
-          h-full
+          min-h-screen
           max-w-[1800px]
+
+          flex-col-reverse
           items-center
-          gap-12
-          px-8
+          justify-center
+
+          gap-10
+
+          px-5
           pt-24
+          pb-10
+
+          sm:px-6
+          md:px-8
+
+          lg:h-screen
+          lg:flex-row
+          lg:items-center
+          lg:justify-between
+          lg:gap-12
+          lg:px-8
+          lg:pt-24
+          lg:pb-0
+
           xl:px-20
           2xl:px-28
         "
       >
-        {/* Left */}
+        {/* ================= Left ================= */}
 
-        <div className="flex w-[40%] justify-start">
+        <div
+          className="
+            flex
+            w-full
+            justify-start
+
+            lg:w-[40%]
+          "
+        >
           <HeroLeft />
         </div>
 
-        {/* Right */}
+        {/* ================= Right ================= */}
 
-        <div className="flex w-[60%] justify-center">
+        <div
+          className="
+            flex
+            w-full
+            justify-center
+
+            lg:w-[60%]
+           
+          "
+        >
           <HeroRight />
         </div>
       </div>

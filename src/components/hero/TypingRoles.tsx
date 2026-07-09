@@ -12,36 +12,57 @@ export default function TypingRoles() {
         delay: 0.6,
         duration: 0.6,
       }}
-      className="mt-8 flex items-center gap-3"
+      className="
+        mt-6
+        flex
+        items-start
+        gap-3
+
+        sm:mt-8
+        sm:items-center
+      "
     >
       {/* Prompt */}
-      <span className="text-lg font-semibold text-blue-500">
+
+      <span
+        className="
+          text-base
+          font-semibold
+          text-blue-500
+
+          sm:text-lg
+        "
+      >
         &gt;
       </span>
 
       {/* Typewriter */}
+
       <h3
         className="
-          min-h-[32px]
-          text-xl
+          min-h-[52px]
+
+          text-lg
           font-semibold
+          leading-relaxed
           text-muted-foreground
+
+          sm:min-h-[32px]
           sm:text-2xl
         "
       >
         <Typewriter
-       words={[
-  "Full Stack Developer",
-  "Frontend Intern @ IITianCrafts",
-  "AI-Powered Web Developer",
-  "Next.js • React • TypeScript",
-  "Node.js • Express • Prisma",
-  "PostgreSQL • MongoDB",
-  "Open Source Contributor",
-  "Building naXity & smile12",
-  "DSA Enthusiast • Java",
- 
-]}
+          words={[
+            "Full Stack Developer",
+            "Frontend Intern @ IITianCrafts",
+            "AI-Powered Web Developer",
+            "Next.js • React • TypeScript",
+            "Node.js • Express • Prisma",
+            "PostgreSQL • MongoDB",
+            "Open Source Contributor",
+            "Building naXity & Smile12",
+            "DSA Enthusiast • Java",
+          ]}
           loop={0}
           cursor
           cursorStyle="_"

@@ -48,7 +48,6 @@ export default function VSCodeEditor() {
         "
       >
         <div className="flex flex-col items-center gap-6">
-
           <Files size={21} className="text-blue-400" />
 
           <Search
@@ -75,16 +74,13 @@ export default function VSCodeEditor() {
             size={18}
             className="cursor-pointer text-zinc-500 hover:text-white"
           />
-
         </div>
 
         <div className="flex justify-center pb-2">
-
           <Settings
             size={18}
             className="cursor-pointer text-zinc-500 hover:text-white"
           />
-
         </div>
       </aside>
 
@@ -92,6 +88,9 @@ export default function VSCodeEditor() {
 
       <div
         className="
+          hidden
+          md:block
+
           w-[220px]
           shrink-0
           border-r
@@ -105,7 +104,6 @@ export default function VSCodeEditor() {
       {/* ================= Editor ================= */}
 
       <div className="flex min-w-0 flex-1 flex-col">
-
         {/* Tabs */}
 
         <div
@@ -121,8 +119,7 @@ export default function VSCodeEditor() {
             pr-2
           "
         >
-          <div className="flex h-full">
-
+          <div className="flex h-full overflow-hidden">
             <div
               className="
                 flex
@@ -134,24 +131,24 @@ export default function VSCodeEditor() {
                 px-5
                 text-xs
                 text-white
+                whitespace-nowrap
               "
             >
               portfolio.tsx
             </div>
 
-            <div className="flex h-full items-center px-5 text-xs text-zinc-500">
+            <div className="hidden sm:flex h-full items-center px-5 text-xs text-zinc-500 whitespace-nowrap">
               globals.css
             </div>
 
-            <div className="flex h-full items-center px-5 text-xs text-zinc-500">
+            <div className="hidden lg:flex h-full items-center px-5 text-xs text-zinc-500 whitespace-nowrap">
               package.json
             </div>
-
           </div>
 
           <MoreHorizontal
             size={16}
-            className="text-zinc-500"
+            className="shrink-0 text-zinc-500"
           />
         </div>
 
@@ -159,8 +156,10 @@ export default function VSCodeEditor() {
 
         <div
           className="
-            flex
-           h-7
+            hidden
+            sm:flex
+
+            h-7
             items-center
             gap-2
             border-b
@@ -197,7 +196,6 @@ export default function VSCodeEditor() {
         {/* Status */}
 
         <StatusBar />
-
       </div>
     </div>
   );
