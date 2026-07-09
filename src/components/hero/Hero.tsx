@@ -1,5 +1,8 @@
 import HeroLeft from "./HeroLeft";
 import HeroRight from "./HeroRight";
+import Dock from "@/components/workspace/Dock";
+
+import MiniMac from "@/components/mobile/MiniMac";
 
 export default function Hero() {
   return (
@@ -33,31 +36,54 @@ export default function Hero() {
 
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/5 blur-[180px]" />
 
-      {/* ================= Content ================= */}
+      {/* ================= Mobile ================= */}
+
+      <div
+        className="
+          relative
+          z-10
+
+          flex
+          flex-col
+
+          lg:hidden
+
+          px-5
+          pt-24
+          pb-10
+        "
+      >
+        {/* Hero Left */}
+
+        <HeroLeft />
+
+        <Dock/>
+
+        {/* Mini Mac */}
+
+        <div
+          className="
+            mt-10
+            flex
+            justify-center
+          "
+        >
+          <MiniMac />
+        </div>
+      </div>
+
+      {/* ================= Desktop ================= */}
 
       <div
         className="
           relative
           z-10
           mx-auto
-          flex
+          hidden
           min-h-screen
           max-w-[1800px]
 
-          flex-col-reverse
-          items-center
-          justify-center
-
-          gap-10
-
-          px-5
-          pt-24
-          pb-10
-
-          sm:px-6
-          md:px-8
-
-          lg:h-screen
+          lg:flex
           lg:flex-row
           lg:items-center
           lg:justify-between
@@ -93,7 +119,6 @@ export default function Hero() {
             justify-center
 
             lg:w-[60%]
-           
           "
         >
           <HeroRight />
