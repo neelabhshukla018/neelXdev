@@ -12,10 +12,7 @@ export const navItems: NavItem[] = [
     label: "About",
     href: "#about",
   },
-  {
-    label: "Journey",
-    href: "#journey",
-  },
+
   {
     label: "Skills",
     href: "#skills",

@@ -1,29 +1,23 @@
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
+import About from "@/components/about/AboutSection";
+
+import GlobalBackground from "@/components/background/GlobalBackground";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
-      {/* Navigation */}
-      <Navbar />
+    <main className="relative min-h-screen overflow-x-hidden">
+      {/* One shared background */}
+      <GlobalBackground />
 
-      {/* Hero */}
-      <Hero />
+      {/* Everything else above it */}
+      <div className="relative z-10">
+        <Navbar />
 
-      {/* About */}
-      {/* <AboutCard /> */}
+        <Hero />
 
-      {/* Journey */}
-      {/* <JourneyCard /> */}
-
-      {/* Skills */}
-      {/* <SkillsCard /> */}
-
-      {/* Projects */}
-      {/* <ProjectsCard /> */}
-
-      {/* Contact */}
-      {/* <ContactCard /> */}
+        <About />
+      </div>
     </main>
   );
 }
