@@ -7,7 +7,18 @@
  * Core data models used across the Skills section.
  */
 
-import { LucideIcon } from "lucide-react";
+import { ComponentType } from "react";
+
+/* ==========================================================
+ * ICON
+ * ==========================================================
+ */
+
+export type SkillIcon = ComponentType<{
+  className?: string;
+  size?: number | string;
+  color?: string;
+}>;
 
 /* ==========================================================
  * BASIC TYPES
@@ -48,7 +59,9 @@ export type SkillFileExtension =
 
 export interface Experience {
   years: number;
+
   months?: number;
+
   startedAt?: string;
 }
 
@@ -59,46 +72,59 @@ export interface Experience {
 
 export interface SkillProject {
   id: string;
+
   name: string;
+
   description?: string;
+
   href?: string;
 }
 
 /* ==========================================================
- * SKILL METRICS
+ * METRICS
  * ==========================================================
  */
 
 export interface SkillMetrics {
-  proficiency: number;      // 0-100
-  confidence: number;       // 0-100
-  experience: number;       // 0-100
-  problemSolving: number;   // 0-100
-  realWorldUsage: number;   // 0-100
+  proficiency: number;
+
+  confidence: number;
+
+  experience: number;
+
+  problemSolving: number;
+
+  realWorldUsage: number;
 }
 
 /* ==========================================================
- * SKILL STATS
+ * STATS
  * ==========================================================
  */
 
 export interface SkillStats {
   years: number;
+
   projects: number;
+
   certifications?: number;
+
   commits?: number;
+
   repositories?: number;
+
   articles?: number;
 }
 
 /* ==========================================================
- * SKILL CONNECTION
+ * CONNECTION
  * ==========================================================
  */
 
 export interface SkillConnection {
   target: string;
-  strength: number; // 1-100
+
+  strength: number;
 }
 
 /* ==========================================================
@@ -108,10 +134,9 @@ export interface SkillConnection {
 
 export interface GraphPosition {
   x: number;
-  y: number;
-}
 
-/* ==========================================================
+  y: number;
+}/* ==========================================================
  * SKILL
  * ==========================================================
  */
@@ -131,7 +156,7 @@ export interface Skill {
 
   status: SkillStatus;
 
-  icon: LucideIcon;
+  icon: SkillIcon;
 
   color: string;
 
@@ -168,7 +193,7 @@ export interface SkillGroup {
 
   description?: string;
 
-  icon?: LucideIcon;
+  icon?: SkillIcon;
 
   color: string;
 
@@ -191,14 +216,14 @@ export interface OpenSkillFile {
 
   extension: SkillFileExtension;
 
+  icon: SkillIcon;
+
   active: boolean;
 
   pinned?: boolean;
 
   dirty?: boolean;
-}
-
-/* ==========================================================
+}/* ==========================================================
  * EDITOR STATE
  * ==========================================================
  */
