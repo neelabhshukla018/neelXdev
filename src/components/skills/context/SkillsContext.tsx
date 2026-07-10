@@ -139,8 +139,8 @@ export function SkillsProvider({
   const [rightSidebarOpen, setRightSidebarOpen] =
     useState(true);
 
-  const [minimapVisible, setMinimapVisible] =
-    useState(VSCODE.SHOW_MINIMAP);
+const [minimapVisible, setMinimapVisible] =
+  useState<boolean>(VSCODE.SHOW_MINIMAP);
 
   /* ======================================================
    * EXPLORER
