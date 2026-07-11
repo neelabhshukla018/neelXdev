@@ -70,6 +70,8 @@ export interface TerminalCommand {
   type: TerminalCommandType;
 
   timestamp: number;
+
+  success?: boolean;
 }
 
 /* ==========================================================
@@ -93,11 +95,16 @@ export interface TerminalOutputLine {
  */
 
 export interface TerminalHistoryItem {
-  command: TerminalCommand;
+  id: string;
 
-  output: TerminalOutputLine[];
+  command: string;
+
+  timestamp: number;
+
+  success?: boolean;
+
+  output?: string[];
 }
-
 /* ==========================================================
  * CURSOR
  * ==========================================================

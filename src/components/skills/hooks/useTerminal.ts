@@ -15,9 +15,14 @@ import { useSkills } from "../context/SkillsContext";
 
 interface TerminalCommand {
   id: string;
+
   command: string;
+
   output: string[];
-  timestamp: string;
+
+  timestamp: number;
+
+  success: boolean;
 }
 
 const INITIAL_HISTORY: TerminalCommand[] = [
@@ -25,13 +30,15 @@ const INITIAL_HISTORY: TerminalCommand[] = [
     id: "1",
     command: "whoami",
     output: ["Neelabh Shukla"],
-    timestamp: "10:15",
+    timestamp: Date.now() - 180000,
+    success: true,
   },
   {
     id: "2",
     command: "pwd",
     output: ["/portfolio/src/components/skills"],
-    timestamp: "10:16",
+    timestamp: Date.now() - 120000,
+    success: true,
   },
   {
     id: "3",
@@ -45,7 +52,8 @@ const INITIAL_HISTORY: TerminalCommand[] = [
       "ui/",
       "ai/",
     ],
-    timestamp: "10:17",
+    timestamp: Date.now() - 60000,
+    success: true,
   },
 ];
 
@@ -88,6 +96,7 @@ export function useTerminal() {
     if (!value) return;
 
     let output: string[] = [];
+    let success = true;
 
     switch (value.toLowerCase()) {
       case "help":
@@ -140,6 +149,8 @@ export function useTerminal() {
         return;
 
       default:
+        success = false;
+
         output = [
           `Command not found: ${value}`,
           "Type 'help' to see available commands.",
@@ -152,10 +163,8 @@ export function useTerminal() {
         id: crypto.randomUUID(),
         command: value,
         output,
-        timestamp: new Date().toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit",
-        }),
+        timestamp: Date.now(),
+        success,
       },
     ]);
 
