@@ -10,13 +10,13 @@ Building modern, scalable, and interactive web applications with a passion for c
   <a href="https://github.com/neelabhshukla018">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
   </a>
-  <a href="YOUR_LINKEDIN_URL">
+  <a href="https://www.linkedin.com/in/neelabh18shukla/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="YOUR_PORTFOLIO_URL">
+  <a href="https://neel-xdev-ipu2.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel" />
   </a>
-  <a href="mailto:YOUR_EMAIL">
+  <a href="mailto:neelabhshukla79@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail" />
   </a>
 </p>
@@ -54,7 +54,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Home
 
-<img src="images/home.png" width="420"/>
+<img src="images/readme_ss/home.png" width="420"/>
 
 </td>
 
@@ -62,7 +62,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### About
 
-<img src="images/about.png" width="420"/>
+<img src="images/readme_ss/About.png" width="420"/>
 
 </td>
 </tr>
@@ -72,7 +72,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Projects
 
-<img src="images/projects.png" width="420"/>
+<img src="images/readme_ss/Projects.png" width="420"/>
 
 </td>
 
@@ -80,18 +80,13 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Skills
 
-<img src="images/skills.png" width="420"/>
+<img src="images/readme_ss/Skills.png" width="420"/>
 
 </td>
 </tr>
 </table>
 
-> Replace the image paths with your screenshots:
->
-> - `images/home.png`
-> - `images/about.png`
-> - `images/projects.png`
-> - `images/skills.png`
+
 
 ---
 
