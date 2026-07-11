@@ -8,9 +8,14 @@
  * ==========================================================
  * VS Code Editor Tabs
  */
-
-import { X, Pin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ElementType } from "react";
+import {
+  X,
+  Pin,
+  Circle,
+  FileCode2,
+} from "lucide-react";
 
 import { useTabs } from "../hooks/useTabs";
 
@@ -43,7 +48,7 @@ export default function Tabs() {
 >
       <AnimatePresence initial={false}>
         {tabs.map((tab) => {
-          const Icon = tab.icon;
+          const Icon: ElementType = tab.icon ?? FileCode2;
 
           const active = tab.id === activeTabId;
 
