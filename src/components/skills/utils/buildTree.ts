@@ -45,6 +45,7 @@ const CATEGORY_ORDER: Skill["category"][] = [
   "api",
   "ui",
   "ai",
+  "tools",
 ];
 
 /* ==========================================================
@@ -57,12 +58,20 @@ const CATEGORY_LABELS: Record<
   string
 > = {
   frontend: "Frontend",
+
   backend: "Backend",
+
   database: "Database",
+
   deployment: "Deployment",
+
   api: "API",
+
   ui: "UI / UX",
+
   ai: "Artificial Intelligence",
+
+  tools: "Tools",
 };
 
 /* ==========================================================
@@ -78,37 +87,27 @@ export function buildTree(
 
   CATEGORY_ORDER.forEach((category) => {
     const categorySkills = skills.filter(
-      (skill) =>
-        skill.category === category
+      (skill) => skill.category === category
     );
 
-    if (!categorySkills.length) {
-      return;
-    }
+    if (!categorySkills.length) return;
 
     folders.push({
       id: category,
 
-      name:
-        CATEGORY_LABELS[category],
+      name: CATEGORY_LABELS[category],
 
-      expanded:
-        expandedFolders.includes(
-          category
-        ),
+      expanded: expandedFolders.includes(category),
 
-      files: categorySkills.map(
-        (skill) => ({
-          id: skill.id,
+      files: categorySkills.map((skill) => ({
+        id: skill.id,
 
-          name: skill.name,
+        name: skill.name,
 
-          extension:
-            skill.extension,
+        extension: skill.extension,
 
-          skill,
-        })
-      ),
+        skill,
+      })),
     });
   });
 
@@ -128,8 +127,7 @@ export function findExplorerFile(
 ): ExplorerFile | undefined {
   for (const folder of tree.folders) {
     const file = folder.files.find(
-      (file) =>
-        file.skill.id === skillId
+      (file) => file.skill.id === skillId
     );
 
     if (file) {
@@ -150,8 +148,7 @@ export function findFolder(
   folderId: string
 ): ExplorerFolder | undefined {
   return tree.folders.find(
-    (folder) =>
-      folder.id === folderId
+    (folder) => folder.id === folderId
   );
 }
 
@@ -164,8 +161,7 @@ export function getTotalFiles(
   tree: ExplorerTree
 ): number {
   return tree.folders.reduce(
-    (total, folder) =>
-      total + folder.files.length,
+    (total, folder) => total + folder.files.length,
     0
   );
 }
