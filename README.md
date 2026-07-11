@@ -8,16 +8,16 @@ Building modern, scalable, and interactive web applications with a passion for c
 
 <p align="center">
   <a href="https://github.com/neelabhshukla018">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub"/>
   </a>
   <a href="https://www.linkedin.com/in/neelabh18shukla/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
   </a>
   <a href="https://neel-xdev-ipu2.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel" />
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel" alt="Portfolio"/>
   </a>
   <a href="mailto:neelabhshukla79@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail" />
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail" alt="Email"/>
   </a>
 </p>
 
@@ -27,53 +27,44 @@ Building modern, scalable, and interactive web applications with a passion for c
 
 # 🚀 About This Portfolio
 
-Welcome to my personal developer portfolio!
+Welcome to my personal portfolio!
 
-This portfolio is an interactive, VS Code-inspired workspace that showcases my journey as a Full Stack Developer. It highlights my projects, skills, experience, and passion for building modern, scalable, and visually engaging web applications.
+This portfolio is designed as an immersive **VS Code-inspired developer workspace**, showcasing my skills, projects, experience, and passion for creating modern, scalable, and visually engaging web applications.
 
-## ✨ Highlights
+It reflects my journey as a developer while demonstrating clean architecture, premium UI design, smooth animations, and performance-focused development.
+
+---
+
+# ✨ Highlights
 
 - 💻 VS Code Inspired Developer Workspace
 - 🎨 Premium Glassmorphism UI
 - 🌙 Dark & Light Mode
 - ⚡ Built with Next.js 16 & TypeScript
 - 🎭 Framer Motion Animations
-- 📱 Fully Responsive Design
+- 📱 Fully Responsive
 - 🧠 Interactive Skills Visualization
-- 🚀 Dynamic Project Showcase
-- 📬 Functional Contact Form (EmailJS)
-- 📈 Performance Optimized
-- ♿ Accessible & SEO Friendly
+- 🚀 Beautiful Project Showcase
+- 📬 Contact Form with EmailJS
+- 📈 Optimized Performance
+- ♿ Accessibility Friendly
+- 🔍 SEO Optimized
 
 ---
 
 # 🖼️ Portfolio Preview
 
-<table align="center">
-<tr>
-<td align="center">
-<b>🏠 Home</b><br><br>
-<img src="./public/readme_ss/home.png" width="450"/>
-</td>
+<div align="center">
 
-<td align="center">
-<b>👨‍💻 About</b><br><br>
-<img src="./public/readme_ss/About.png" width="450"/>
-</td>
-</tr>
+| Home | About |
+|:---:|:---:|
+| <img src="./readme_ss/home.png" width="450" alt="Home"/> | <img src="./readme_ss/About.png" width="450" alt="About"/> |
 
-<tr>
-<td align="center">
-<b>🚀 Projects</b><br><br>
-<img src="./public/readme_ss/Projects.png" width="450"/>
-</td>
+| Projects | Skills |
+|:---:|:---:|
+| <img src="./readme_ss/Projects.png" width="450" alt="Projects"/> | <img src="./readme_ss/Skills.png" width="450" alt="Skills"/> |
 
-<td align="center">
-<b>🛠️ Skills</b><br><br>
-<img src="./public/readme_ss/Skills.png" width="450"/>
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
@@ -99,7 +90,7 @@ This portfolio is an interactive, VS Code-inspired workspace that showcases my j
 - PostgreSQL
 - MongoDB
 
-### Tools & Platforms
+### Tools
 
 - Git
 - GitHub
@@ -113,16 +104,17 @@ This portfolio is an interactive, VS Code-inspired workspace that showcases my j
 # ✨ Features
 
 - Interactive Hero Section
+- VS Code Inspired Layout
 - Animated Developer Workspace
-- VS Code Inspired UI
-- Smooth Page Transitions
+- Dynamic About Section
 - Experience Timeline
-- Interactive Skills Tree
+- Interactive Skills Visualization
 - Modern Project Showcase
-- Responsive Across All Devices
-- Working Contact Form
-- Optimized Performance
+- Smooth Animations
+- Contact Form
+- Fully Responsive
 - SEO Friendly
+- Fast Performance
 - Clean & Scalable Architecture
 
 ---
@@ -130,42 +122,44 @@ This portfolio is an interactive, VS Code-inspired workspace that showcases my j
 # 📁 Folder Structure
 
 ```bash
-src/
+portfolio/
 │
-├── app/
-├── components/
-├── hooks/
-├── context/
-├── data/
-├── types/
-├── utils/
-├── assets/
-└── styles/
+├── readme_ss/
+│   ├── home.png
+│   ├── About.png
+│   ├── Projects.png
+│   └── Skills.png
+│
+├── public/
+├── src/
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
 ---
 
 # ⚙️ Getting Started
 
-## Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/neelabhshukla018/portfolio.git
 ```
 
-## Navigate to the Project
+### Navigate into the Project
 
 ```bash
 cd portfolio
 ```
 
-## Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-## Start Development Server
+### Start the Development Server
 
 ```bash
 npm run dev
@@ -183,7 +177,7 @@ Open **http://localhost:3000** in your browser.
 
 # 📬 Connect With Me
 
-<p align="left">
+<p align="center">
 <a href="https://github.com/neelabhshukla018">
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github"/>
 </a>
@@ -205,12 +199,10 @@ Open **http://localhost:3000** in your browser.
 
 <div align="center">
 
-### ⭐ If you enjoyed this project, consider giving it a Star!
+## ⭐ If you like this project, don't forget to star the repository!
 
-It helps support my work and motivates me to build more awesome projects.
+It motivates me to build more open-source projects and share my work with the community.
 
-<br>
-
-Made with ❤️ by **Neelabh Shukla**
+### Made with ❤️ by Neelabh Shukla
 
 </div>
