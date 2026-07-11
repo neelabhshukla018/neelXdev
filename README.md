@@ -1,36 +1,205 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 👨‍💻 Neelabh Shukla
 
-First, run the development server:
+### Full Stack Developer • Open Source Contributor • UI/UX Enthusiast
+
+Building modern, scalable, and interactive web applications with a passion for creating exceptional user experiences.
+
+<p align="center">
+  <a href="https://github.com/neelabhshukla018">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="YOUR_LINKEDIN_URL">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
+  </a>
+  <a href="YOUR_PORTFOLIO_URL">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel" />
+  </a>
+  <a href="mailto:YOUR_EMAIL">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail" />
+  </a>
+</p>
+
+</div>
+
+---
+
+# 🚀 About This Portfolio
+
+This portfolio is more than just a personal website—it's an interactive developer workspace inspired by modern IDEs and VS Code.
+
+It showcases my journey, technical expertise, projects, work experience, and creativity through immersive animations, premium UI design, and smooth user interactions.
+
+### ✨ Highlights
+
+- 💻 VS Code Inspired Developer Workspace
+- 🎨 Premium Glassmorphism UI
+- 🌙 Dark & Light Mode
+- ⚡ Built with Next.js 16 & TypeScript
+- 🎭 Framer Motion Animations
+- 📱 Fully Responsive
+- 🧠 Interactive Skills Visualization
+- 🚀 Project Showcase
+- 📬 Working Contact Form
+- 📈 Performance Optimized
+
+---
+
+# 🖼️ Portfolio Preview
+
+<table>
+<tr>
+<td align="center">
+
+### Home
+
+<img src="images/home.png" width="420"/>
+
+</td>
+
+<td align="center">
+
+### About
+
+<img src="images/about.png" width="420"/>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### Projects
+
+<img src="images/projects.png" width="420"/>
+
+</td>
+
+<td align="center">
+
+### Skills
+
+<img src="images/skills.png" width="420"/>
+
+</td>
+</tr>
+</table>
+
+> Replace the image paths with your screenshots:
+>
+> - `images/home.png`
+> - `images/about.png`
+> - `images/projects.png`
+> - `images/skills.png`
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Backend
+
+- Node.js
+- Express.js
+- Prisma ORM
+
+## Database
+
+- PostgreSQL
+- MongoDB
+
+## Tools
+
+- Git
+- GitHub
+- VS Code
+- Figma
+- Vercel
+
+---
+
+# 📂 Features
+
+- Interactive Hero Section
+- Animated Developer Workspace
+- IDE Inspired Layout
+- Dynamic About Section
+- Experience Timeline
+- Interactive Skills Tree
+- Beautiful Project Showcase
+- Smooth Page Animations
+- Contact Form with EmailJS
+- Mobile Optimized
+- SEO Friendly
+- Fast Loading
+- Clean Architecture
+
+---
+
+# 📁 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+│
+├── app/
+├── components/
+├── hooks/
+├── context/
+├── data/
+├── types/
+├── utils/
+├── assets/
+└── styles/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# ⚙️ Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone Repository
+git clone https://github.com/neelabhshukla018/portfolio.git
 
-## Learn More
+# Enter Folder
+cd portfolio
 
-To learn more about Next.js, take a look at the following resources:
+# Install Dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start Development Server
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# 🌐 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 **Portfolio:** https://your-portfolio.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 📬 Connect With Me
+
+- 💼 LinkedIn: https://linkedin.com/in/YOUR_USERNAME
+- 🌐 Portfolio: https://yourportfolio.com
+- 📧 Email: yourmail@gmail.com
+- 🐙 GitHub: https://github.com/neelabhshukla018
+
+---
+
+<div align="center">
+
+### ⭐ If you like this portfolio, don't forget to give it a Star!
+
+Made with ❤️ by **Neelabh Shukla**
+
+</div>
