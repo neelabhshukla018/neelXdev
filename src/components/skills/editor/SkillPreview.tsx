@@ -143,13 +143,13 @@ export default function SkillPreview() {
         <StatCard
           icon={GitBranch}
           label="Repositories"
-          value={selectedSkill.stats.repositories.toString()}
+          value={String(selectedSkill.stats.repositories ?? 0)}
         />
 
         <StatCard
           icon={TrendingUp}
           label="Commits"
-          value={selectedSkill.stats.commits.toString()}
+          value={String(selectedSkill.stats.commits ?? 0)}
         />
 
         <StatCard
