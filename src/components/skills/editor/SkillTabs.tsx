@@ -10,12 +10,13 @@
  */
 
 import { motion, AnimatePresence } from "framer-motion";
+import { ElementType } from "react";
 import {
   X,
   Pin,
   Circle,
+  FileCode2,
 } from "lucide-react";
-
 import { useTabs } from "../hooks/useTabs";
 
 export default function SkillTabs() {
@@ -35,7 +36,7 @@ export default function SkillTabs() {
     <div className="flex h-10 items-center overflow-x-auto border-b border-[#2B2B2B] bg-[#252526] scrollbar-none">
       <AnimatePresence initial={false}>
         {tabs.map((tab) => {
-          const Icon = tab.icon;
+          const Icon: ElementType = tab.icon ?? FileCode2;
 
           const active =
             tab.id === activeTabId;
@@ -85,14 +86,10 @@ ${
                   FILE ICON
               ==================================== */}
 
-              <Icon
-                size={16}
-                color={
-                  active
-                    ? "#4FC1FF"
-                    : "#7BA7F7"
-                }
-              />
+            <Icon
+  className="h-4 w-4"
+  color={active ? "#4FC1FF" : "#7BA7F7"}
+/>
 
               {/* ===================================
                   FILE NAME
