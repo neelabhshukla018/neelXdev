@@ -7,8 +7,11 @@
  * Types for the VS Code Explorer tree.
  */
 
-import { LucideIcon } from "lucide-react";
-import { Skill, SkillCategory } from "./skill";
+import {
+  Skill,
+  SkillCategory,
+  SkillIcon,
+} from "./skill";
 
 /* ==========================================================
  * NODE TYPE
@@ -56,7 +59,7 @@ export interface ExplorerNode {
 
   type: ExplorerNodeType;
 
-  icon?: LucideIcon;
+  icon?: SkillIcon;
 
   parentId?: string;
 

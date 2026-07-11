@@ -7,19 +7,20 @@
  * Core data models used across the Skills section.
  */
 
-import { ComponentType } from "react";
+import { ComponentType, SVGProps } from "react";
 
 /* ==========================================================
  * ICON
  * ==========================================================
  */
 
-export type SkillIcon = ComponentType<{
-  className?: string;
-  size?: number | string;
-  color?: string;
-}>;
-
+export type SkillIcon = ComponentType<
+  SVGProps<SVGSVGElement> & {
+    className?: string;
+    size?: number | string;
+    color?: string;
+  }
+>;
 /* ==========================================================
  * BASIC TYPES
  * ==========================================================

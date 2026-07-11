@@ -8,11 +8,11 @@
  * minimap, cursor, and editor state.
  */
 
-import { LucideIcon } from "lucide-react";
 import {
   Skill,
   SkillFileExtension,
   SkillSearchResult,
+  SkillIcon,
 } from "./skill";
 
 /* ==========================================================
@@ -31,7 +31,7 @@ export interface EditorTab {
 
   extension: SkillFileExtension;
 
-  icon?: LucideIcon;
+  icon?: SkillIcon;
 
   active: boolean;
 
