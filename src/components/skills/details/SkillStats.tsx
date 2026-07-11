@@ -85,14 +85,14 @@ export default function SkillStats() {
         <SummaryCard
           icon={FolderGit2}
           label="Repositories"
-          value={selectedSkill.stats.repositories.toString()}
+         value={(selectedSkill.stats.repositories ?? 0).toString()}
           color={selectedSkill.color}
         />
 
         <SummaryCard
           icon={GitCommitHorizontal}
           label="Commits"
-          value={selectedSkill.stats.commits.toLocaleString()}
+         value={(selectedSkill.stats.repositories ?? 0).toString()}
           color={selectedSkill.color}
         />
 
