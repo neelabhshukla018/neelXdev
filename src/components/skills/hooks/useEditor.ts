@@ -58,9 +58,7 @@ export function useEditor() {
    * LANGUAGE
    * ==================================================== */
 
-  const language = useMemo(() => {
-    return "TypeScript";
-  }, []);
+  const language = "TypeScript";
 
   /* ======================================================
    * READ ONLY
@@ -81,6 +79,14 @@ export function useEditor() {
   }, [selectedSkill]);
 
   /* ======================================================
+   * ACTIVE LINE
+   * ==================================================== */
+
+  const activeLine = useMemo(() => {
+    return 1;
+  }, []);
+
+  /* ======================================================
    * FILE PATH
    * ==================================================== */
 
@@ -98,10 +104,12 @@ export function useEditor() {
     id === activeTabId;
 
   const isPinned = (id: string) =>
-    tabs.find((tab) => tab.id === id)?.pinned ?? false;
+    tabs.find((tab) => tab.id === id)?.pinned ??
+    false;
 
   const canClose = (id: string) =>
-    tabs.find((tab) => tab.id === id)?.closable ?? false;
+    tabs.find((tab) => tab.id === id)?.closable ??
+    false;
 
   return {
     /* ---------------------------------------
@@ -121,6 +129,8 @@ export function useEditor() {
     language,
 
     lineCount,
+
+    activeLine,
 
     readOnly,
 
