@@ -58,7 +58,7 @@ export default function ExperienceCard() {
           icon={Rocket}
           color={selectedSkill.color}
           title="Started Learning"
-          subtitle={selectedSkill.experience.startedAt}
+          subtitle={selectedSkill.experience.startedAt ?? "Recently"}
           description={`Started exploring ${selectedSkill.name} fundamentals.`}
         />
 
