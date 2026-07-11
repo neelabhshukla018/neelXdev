@@ -54,7 +54,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Home
 
-<img src="images/readme_ss/home.png" width="420"/>
+<img src="readme_ss/home.png" width="420"/>
 
 </td>
 
@@ -62,7 +62,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### About
 
-<img src="images/readme_ss/About.png" width="420"/>
+<img src="/readme_ss/About.png" width="420"/>
 
 </td>
 </tr>
@@ -72,7 +72,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Projects
 
-<img src="images/readme_ss/Projects.png" width="420"/>
+<img src="/readme_ss/Projects.png" width="420"/>
 
 </td>
 
@@ -80,7 +80,7 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 
 ### Skills
 
-<img src="images/readme_ss/Skills.png" width="420"/>
+<img src="/readme_ss/Skills.png" width="420"/>
 
 </td>
 </tr>
