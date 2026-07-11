@@ -29,13 +29,13 @@ import {
   SiVercel,
   SiFirebase,
   SiExpress,
-  SiAmazonaws,
+  
   SiMysql,
   SiRedis,
   SiAngular,
   SiVuedotjs,
   SiGraphql,
-  SiOpenai,
+  
 } from "react-icons/si";
 
 
@@ -239,14 +239,7 @@ export default function TechIcon({
   }
 
 
-  if (tech.includes("aws")) {
-    return (
-      <SiAmazonaws
-        size={size}
-        color={color || "#FF9900"}
-      />
-    );
-  }
+
 
 
   if (tech.includes("vercel")) {
@@ -284,18 +277,7 @@ export default function TechIcon({
   }
 
 
-  if (
-    tech.includes("openai") ||
-    tech.includes("ai") ||
-    tech.includes("llm")
-  ) {
-    return (
-      <SiOpenai
-        size={size}
-        color={color || "#FFFFFF"}
-      />
-    );
-  }
+
 
 
 
