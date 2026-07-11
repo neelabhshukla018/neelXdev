@@ -120,6 +120,16 @@ export interface SkillConnection {
 
   strength: number;
 }
+/* ==========================================================
+ * POINT
+ * ==========================================================
+ */
+
+export interface Point {
+  x: number;
+
+  y: number;
+}
 
 /* ==========================================================
  * GRAPH POSITION
