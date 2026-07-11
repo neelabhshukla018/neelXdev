@@ -341,7 +341,7 @@ export default function RightSidebar() {
             icon={Briefcase}
             label="Projects"
             value={
-              selectedSkill.stats.projects.toString()
+             String(selectedSkill.stats.projects ?? 0)
             }
           />
 
@@ -349,9 +349,7 @@ export default function RightSidebar() {
           <StatCard
             icon={Workflow}
             label="Repositories"
-            value={
-              selectedSkill.stats.repositories.toString()
-            }
+            value={String(selectedSkill.stats.repositories ?? 0)}
           />
 
 
@@ -359,7 +357,7 @@ export default function RightSidebar() {
             icon={TrendingUp}
             label="Commits"
             value={
-              selectedSkill.stats.commits.toString()
+              String(selectedSkill.stats.commits ?? 0)
             }
           />
 
