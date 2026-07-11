@@ -139,35 +139,6 @@ portfolio/
 
 ---
 
-# ⚙️ Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/neelabhshukla018/portfolio.git
-```
-
-### Navigate into the Project
-
-```bash
-cd portfolio
-```
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Start the Development Server
-
-```bash
-npm run dev
-```
-
-Open **http://localhost:3000** in your browser.
-
----
 
 # 🌐 Live Demo
 
