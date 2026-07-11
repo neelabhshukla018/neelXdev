@@ -81,7 +81,7 @@ function createHeader(
 
     blank(),
 
-    `import { ${skill.icon.name} } from "lucide-react";`,
+   `// Icon: ${skill.name}`,
 
     blank(),
 
@@ -685,13 +685,15 @@ const generators: Record<
 
   database: generateDatabase,
 
-  ui: generateUI,
+  deployment: generateDeployment,
 
   api: generateAPI,
 
+  ui: generateUI,
+
   ai: generateAI,
 
-  deployment: generateDeployment,
+  tools: generateFrontend,
 };
 
 /* ==========================================================
