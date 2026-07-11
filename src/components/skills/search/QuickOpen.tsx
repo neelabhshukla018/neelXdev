@@ -77,9 +77,9 @@ export default function QuickOpen() {
         skill.name
           .toLowerCase()
           .includes(q) ||
-        skill.shortName
-          .toLowerCase()
-          .includes(q) ||
+        (skill.shortName ?? "")
+  .toLowerCase()
+  .includes(q) ||
         skill.category
           .toLowerCase()
           .includes(q)
