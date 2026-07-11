@@ -167,28 +167,27 @@ export default function SkillProgress() {
       {/* ==========================================
           SUMMARY
       ========================================== */}
+<div className="mt-8 grid grid-cols-2 gap-4">
+  <SummaryCard
+    title="Projects"
+    value={selectedSkill.stats.projects.toString()}
+  />
 
-      <div className="mt-8 grid grid-cols-2 gap-4">
-        <SummaryCard
-          title="Projects"
-          value={selectedSkill.stats.projects.toString()}
-        />
+  <SummaryCard
+    title="Commits"
+    value={(selectedSkill.stats.commits ?? 0).toLocaleString()}
+  />
 
-        <SummaryCard
-          title="Commits"
-          value={selectedSkill.stats.commits.toLocaleString()}
-        />
+  <SummaryCard
+    title="Repositories"
+    value={(selectedSkill.stats.repositories ?? 0).toString()}
+  />
 
-        <SummaryCard
-          title="Repositories"
-          value={selectedSkill.stats.repositories.toString()}
-        />
-
-        <SummaryCard
-          title="Years"
-          value={`${selectedSkill.experience.years}+`}
-        />
-      </div>
+  <SummaryCard
+    title="Years"
+    value={`${selectedSkill.experience.years}+`}
+  />
+</div>
     </div>
   );
 }
