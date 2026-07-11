@@ -34,7 +34,21 @@ This portfolio is designed as an immersive **VS Code-inspired developer workspac
 It reflects my journey as a developer while demonstrating clean architecture, premium UI design, smooth animations, and performance-focused development.
 
 ---
+# 🖼️ Portfolio Preview
 
+<div align="center">
+
+| Home | About |
+|:---:|:---:|
+| <img src="./readme_ss/home.png" width="450" alt="Home"/> | <img src="./readme_ss/About.png" width="450" alt="About"/> |
+
+| Projects | Skills |
+|:---:|:---:|
+| <img src="./readme_ss/Projects.png" width="450" alt="Projects"/> | <img src="./readme_ss/Skills.png" width="450" alt="Skills"/> |
+
+</div>
+
+---
 # ✨ Highlights
 
 - 💻 VS Code Inspired Developer Workspace
@@ -52,21 +66,7 @@ It reflects my journey as a developer while demonstrating clean architecture, pr
 
 ---
 
-# 🖼️ Portfolio Preview
 
-<div align="center">
-
-| Home | About |
-|:---:|:---:|
-| <img src="./readme_ss/home.png" width="450" alt="Home"/> | <img src="./readme_ss/About.png" width="450" alt="About"/> |
-
-| Projects | Skills |
-|:---:|:---:|
-| <img src="./readme_ss/Projects.png" width="450" alt="Projects"/> | <img src="./readme_ss/Skills.png" width="450" alt="Skills"/> |
-
-</div>
-
----
 
 # 🛠️ Tech Stack
 
