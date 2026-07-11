@@ -178,7 +178,7 @@ export interface Skill {
 
   connections: SkillConnection[];
 
-  position?: GraphPosition;
+  position: GraphPosition;
 
   featured?: boolean;
 
