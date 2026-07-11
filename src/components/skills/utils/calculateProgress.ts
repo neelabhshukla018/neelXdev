@@ -129,8 +129,7 @@ export function calculateSummary(
 
     completed: skills.filter(
       (skill) =>
-        skill.status ===
-        "mastered"
+        skill.status === "mastered"
     ).length,
 
     total: skills.length,
@@ -147,8 +146,7 @@ export function calculateExperienceYears(
 ): number {
   return skills.reduce(
     (sum, skill) =>
-      sum +
-      skill.experience.years,
+      sum + skill.stats.years,
     0
   );
 }
@@ -163,8 +161,7 @@ export function calculateProjects(
 ): number {
   return skills.reduce(
     (sum, skill) =>
-      sum +
-      skill.stats.projects,
+      sum + skill.stats.projects,
     0
   );
 }
@@ -180,7 +177,7 @@ export function calculateCommits(
   return skills.reduce(
     (sum, skill) =>
       sum +
-      skill.stats.commits,
+      (skill.stats.commits ?? 0),
     0
   );
 }
@@ -196,7 +193,7 @@ export function calculateRepositories(
   return skills.reduce(
     (sum, skill) =>
       sum +
-      skill.stats.repositories,
+      (skill.stats.repositories ?? 0),
     0
   );
 }
