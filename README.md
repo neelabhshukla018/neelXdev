@@ -27,72 +27,59 @@ Building modern, scalable, and interactive web applications with a passion for c
 
 # 🚀 About This Portfolio
 
-This portfolio is more than just a personal website—it's an interactive developer workspace inspired by modern IDEs and VS Code.
+Welcome to my personal developer portfolio!
 
-It showcases my journey, technical expertise, projects, work experience, and creativity through immersive animations, premium UI design, and smooth user interactions.
+This portfolio is an interactive, VS Code-inspired workspace that showcases my journey as a Full Stack Developer. It highlights my projects, skills, experience, and passion for building modern, scalable, and visually engaging web applications.
 
-### ✨ Highlights
+## ✨ Highlights
 
 - 💻 VS Code Inspired Developer Workspace
 - 🎨 Premium Glassmorphism UI
 - 🌙 Dark & Light Mode
 - ⚡ Built with Next.js 16 & TypeScript
 - 🎭 Framer Motion Animations
-- 📱 Fully Responsive
+- 📱 Fully Responsive Design
 - 🧠 Interactive Skills Visualization
-- 🚀 Project Showcase
-- 📬 Working Contact Form
+- 🚀 Dynamic Project Showcase
+- 📬 Functional Contact Form (EmailJS)
 - 📈 Performance Optimized
+- ♿ Accessible & SEO Friendly
 
 ---
 
 # 🖼️ Portfolio Preview
 
-<table>
+<table align="center">
 <tr>
 <td align="center">
-
-### Home
-
-<img src="readme_ss/home.png" width="420"/>
-
+<b>🏠 Home</b><br><br>
+<img src="./public/readme_ss/home.png" width="450"/>
 </td>
 
 <td align="center">
-
-### About
-
-<img src="/readme_ss/About.png" width="420"/>
-
+<b>👨‍💻 About</b><br><br>
+<img src="./public/readme_ss/About.png" width="450"/>
 </td>
 </tr>
 
 <tr>
 <td align="center">
-
-### Projects
-
-<img src="/readme_ss/Projects.png" width="420"/>
-
+<b>🚀 Projects</b><br><br>
+<img src="./public/readme_ss/Projects.png" width="450"/>
 </td>
 
 <td align="center">
-
-### Skills
-
-<img src="/readme_ss/Skills.png" width="420"/>
-
+<b>🛠️ Skills</b><br><br>
+<img src="./public/readme_ss/Skills.png" width="450"/>
 </td>
 </tr>
 </table>
 
-
-
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
-## Frontend
+### Frontend
 
 - Next.js 16
 - React 19
@@ -101,42 +88,42 @@ It showcases my journey, technical expertise, projects, work experience, and cre
 - Framer Motion
 - Lucide React
 
-## Backend
+### Backend
 
 - Node.js
 - Express.js
 - Prisma ORM
 
-## Database
+### Database
 
 - PostgreSQL
 - MongoDB
 
-## Tools
+### Tools & Platforms
 
 - Git
 - GitHub
 - VS Code
 - Figma
 - Vercel
+- EmailJS
 
 ---
 
-# 📂 Features
+# ✨ Features
 
 - Interactive Hero Section
 - Animated Developer Workspace
-- IDE Inspired Layout
-- Dynamic About Section
+- VS Code Inspired UI
+- Smooth Page Transitions
 - Experience Timeline
 - Interactive Skills Tree
-- Beautiful Project Showcase
-- Smooth Page Animations
-- Contact Form with EmailJS
-- Mobile Optimized
+- Modern Project Showcase
+- Responsive Across All Devices
+- Working Contact Form
+- Optimized Performance
 - SEO Friendly
-- Fast Loading
-- Clean Architecture
+- Clean & Scalable Architecture
 
 ---
 
@@ -158,42 +145,71 @@ src/
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Getting Started
+
+## Clone the Repository
 
 ```bash
-# Clone Repository
 git clone https://github.com/neelabhshukla018/portfolio.git
+```
 
-# Enter Folder
+## Navigate to the Project
+
+```bash
 cd portfolio
+```
 
-# Install Dependencies
+## Install Dependencies
+
+```bash
 npm install
+```
 
-# Start Development Server
+## Start Development Server
+
+```bash
 npm run dev
 ```
+
+Open **http://localhost:3000** in your browser.
 
 ---
 
 # 🌐 Live Demo
 
-👉 **Portfolio:** https://your-portfolio.vercel.app
+### 🚀 https://neel-xdev-ipu2.vercel.app/
 
 ---
 
 # 📬 Connect With Me
 
-- 💼 LinkedIn: https://linkedin.com/in/YOUR_USERNAME
-- 🌐 Portfolio: https://yourportfolio.com
-- 📧 Email: yourmail@gmail.com
-- 🐙 GitHub: https://github.com/neelabhshukla018
+<p align="left">
+<a href="https://github.com/neelabhshukla018">
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github"/>
+</a>
+
+<a href="https://www.linkedin.com/in/neelabh18shukla/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin"/>
+</a>
+
+<a href="mailto:neelabhshukla79@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail"/>
+</a>
+
+<a href="https://neel-xdev-ipu2.vercel.app/">
+<img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel"/>
+</a>
+</p>
 
 ---
 
 <div align="center">
 
-### ⭐ If you like this portfolio, don't forget to give it a Star!
+### ⭐ If you enjoyed this project, consider giving it a Star!
+
+It helps support my work and motivates me to build more awesome projects.
+
+<br>
 
 Made with ❤️ by **Neelabh Shukla**
 
