@@ -1,8 +1,6 @@
-// src/components/skills/hooks/useExplorer.ts
-
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 import { useSkills } from "../context/SkillsContext";
 import { searchSkills } from "../data/skills";
@@ -17,6 +15,27 @@ export function useExplorer() {
     selectedSkill,
     skills,
   } = useSkills();
+
+  /* ======================================================
+   * QUICK OPEN
+   * ==================================================== */
+
+  const [quickOpen, setQuickOpen] =
+    useState(false);
+
+  const [
+    quickOpenQuery,
+    setQuickOpenQuery,
+  ] = useState("");
+
+  const closeQuickOpen = () => {
+    setQuickOpen(false);
+    setQuickOpenQuery("");
+  };
+
+  const openQuickOpen = () => {
+    setQuickOpen(true);
+  };
 
   /* ======================================================
    * FILTERED SKILLS
@@ -37,19 +56,23 @@ export function useExplorer() {
   const groupedSkills = useMemo(() => {
     return {
       frontend: filteredSkills.filter(
-        (skill) => skill.category === "frontend"
+        (skill) =>
+          skill.category === "frontend"
       ),
 
       backend: filteredSkills.filter(
-        (skill) => skill.category === "backend"
+        (skill) =>
+          skill.category === "backend"
       ),
 
       database: filteredSkills.filter(
-        (skill) => skill.category === "database"
+        (skill) =>
+          skill.category === "database"
       ),
 
       deployment: filteredSkills.filter(
-        (skill) => skill.category === "deployment"
+        (skill) =>
+          skill.category === "deployment"
       ),
 
       api: filteredSkills.filter(
@@ -92,5 +115,21 @@ export function useExplorer() {
     isExpanded,
 
     isSelected,
+
+    /* =====================================
+       Quick Open
+    ===================================== */
+
+    quickOpen,
+
+    openQuickOpen,
+
+    closeQuickOpen,
+
+    quickOpenQuery,
+
+    setQuickOpenQuery,
+
+    allSkills: skills,
   };
 }
