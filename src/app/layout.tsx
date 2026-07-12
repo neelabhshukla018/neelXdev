@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
+import "./globals.css";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 
 const geistSans = Geist({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"), // Change after deployment
+  metadataBase: new URL("https://neel-xdev-ipu2.vercel.app"),
 
   title: {
     default: "Neelabh's Portfolio",
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Neelabh Shukla",
-      url: "https://your-domain.com",
+      url: "https://neel-xdev-ipu2.vercel.app",
     },
   ],
 
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
     description:
       "Full Stack Developer | AI Engineer | Product Builder",
 
-    url: "https://your-domain.com",
+    url: "https://neel-xdev-ipu2.vercel.app",
 
     siteName: "Neelabh Portfolio",
 
@@ -122,6 +123,8 @@ export default function RootLayout({
     >
       <body className="bg-background text-foreground antialiased">
         <ThemeProvider>{children}</ThemeProvider>
+
+        <Analytics />
       </body>
     </html>
   );
