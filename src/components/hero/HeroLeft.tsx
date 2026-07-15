@@ -109,7 +109,7 @@ export default function HeroLeft() {
           <Briefcase size={18} />
 
           <span>
-            Frontend Intern @{" "}
+            Full Stack Intern @{" "}
             <Link
               href="https://iitiancraft.com/"
               target="_blank"
