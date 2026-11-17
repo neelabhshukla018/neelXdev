@@ -18,7 +18,7 @@ const desktopApps = [
     name: "Instagram",
     icon: FaInstagram,
     color: "text-pink-500",
-    href: "https://www.instagram.com/satyam_shukla_1845/",
+    href: "https://www.instagram.com/arjun_dream_1845/",
   },
   {
     name: "Chrome",
@@ -54,7 +54,7 @@ const desktopApps = [
     name: "LeetCode",
     icon: SiLeetcode,
     color: "text-[#FFA116]",
-    href: "https://leetcode.com/u/sirneelabhshuklaji/",
+    href: "https://leetcode.com/u/neelabhshukla018/",
   },
   {
     name: "Twitter",
@@ -75,7 +75,7 @@ const mobileApps = [
     name: "Instagram",
     icon: FaInstagram,
     color: "text-pink-500",
-    href: "https://www.instagram.com/satyam_shukla_1845/",
+    href: "https://www.instagram.com/arjun_dream_1845/",
   },
   {
     name: "Chrome",
@@ -105,7 +105,7 @@ const mobileApps = [
     name: "LeetCode",
     icon: SiLeetcode,
     color: "text-[#FFA116]",
-    href: "https://leetcode.com/u/sirneelabhshuklaji/",
+    href: "https://leetcode.com/u/neelabhshukla018/",
   },
   {
     name: "Twitter",
